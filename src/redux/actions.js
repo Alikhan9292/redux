@@ -9,7 +9,7 @@ export const addExpense = (expense) => ({
   });
   
   export const setBudget = (budget) => ({
-    type: 'SET_BUDGET',
+    type: 'EDIT_BUDGET',
     payload: budget,
   });
   

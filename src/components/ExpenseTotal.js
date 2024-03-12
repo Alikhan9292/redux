@@ -9,8 +9,8 @@ const ExpenseTotal = () => {
     }, 0);
     
     return(
-        <div className="alert alert-primary">
-            <span>Spent so far: ₸{totalExpenses}</span>
+        <div className="alert alert-info">
+            <span>Total cost: ${totalExpenses}</span>
         </div>
     );
 };

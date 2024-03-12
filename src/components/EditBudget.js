@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { FaSave } from 'react-icons/fa';
 
 const EditBudget = (props) => {
     const [value, setValue] = useState(props.budget);
@@ -13,12 +14,10 @@ const EditBudget = (props) => {
             value={value}
             onChange={(event) => setValue(event.target.value)}
             ></input>
-            <button
-            type="button"
-            class="btn btn-primary"
+            <FaSave
             onClick={() => props.handleSaveClick(value)}
 
-            >Save</button>
+            ></FaSave>
         </>
     );
 };

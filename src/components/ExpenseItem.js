@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux"; 
-import { TiDelete } from 'react-icons/ti';
+import { FaTrash } from 'react-icons/fa';
 import { deleteExpense } from "../redux/actions"; 
 
 const ExpenseItem = (props) => {
@@ -14,10 +14,10 @@ const ExpenseItem = (props) => {
         <li className="list-group-item d-flex justify-content-between align-items-center">
             {props.name}
             <div>
-                <span className='badge text-bg-success me-3'>
-                    ₸{props.cost}
+                <span className='me-3'>
+                    ${props.cost}
                 </span>
-                <TiDelete size='24px' onClick={handleDeleteExpense}></TiDelete>
+                <FaTrash size='24px' color="red" onClick={handleDeleteExpense}></FaTrash>
             </div>
         </li>
     );

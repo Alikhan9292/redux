@@ -1,10 +1,6 @@
 const initialState = {
-    budget: 5000,
-    expenses: [
-      { id: 12, name: 'shopping', cost: 40 },
-      { id: 13, name: 'holiday', cost: 400 },
-      { id: 14, name: 'car service', cost: 50 },
-    ],
+    budget: 1000,
+    expenses: [],
   };
   
   const appReducer = (state = initialState, action) => {
@@ -21,7 +17,7 @@ const initialState = {
             (expense) => expense.id !== action.payload
           ),
         };
-      case 'SET_BUDGET':
+      case 'EDIT_BUDGET':
         return {
           ...state,
           budget: action.payload,
