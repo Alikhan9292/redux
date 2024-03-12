@@ -1,5 +1,5 @@
 import React from "react";
-import { useSelector } from "react-redux"; // Импортируем необходимый хук
+import { useSelector } from "react-redux"; 
 import ExpenseItem from './ExpenseItem';
 
 const ExpenseList = () => {

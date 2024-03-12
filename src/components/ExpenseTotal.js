@@ -1,5 +1,5 @@
 import React from "react";
-import { useSelector } from "react-redux"; // Импортируем необходимый хук
+import { useSelector } from "react-redux"; 
 
 const ExpenseTotal = () => {
     const expenses = useSelector(state => state.expenses); // Получаем список расходов из состояния Redux

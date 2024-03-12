@@ -1,7 +1,7 @@
 import React from "react";
-import { useDispatch } from "react-redux"; // Импортируем необходимый хук
+import { useDispatch } from "react-redux"; 
 import { TiDelete } from 'react-icons/ti';
-import { deleteExpense } from "../redux/actions"; // Импортируем действие для удаления расхода
+import { deleteExpense } from "../redux/actions"; 
 
 const ExpenseItem = (props) => {
     const dispatch = useDispatch(); // Получаем функцию dispatch из хука useDispatch

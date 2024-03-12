@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux"; // Импортируем необходимые хуки
+import { useDispatch, useSelector } from "react-redux"; 
 import EditBudget from './EditBudget';
 import ViewBudget from './ViewBudget';
-import { setBudget } from "../redux/actions"; // Импортируем действие для установки бюджета
+import { setBudget } from "../redux/actions"; 
 
 const Budget = () => {
     const budget = useSelector(state => state.budget); // Получаем бюджет из состояния Redux

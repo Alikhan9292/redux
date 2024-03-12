@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux'; // Импортируем useDispatch
+import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addExpense } from '../redux/actions'; // Импортируем действие для добавления расхода
+import { addExpense } from '../redux/actions';
 
 const AddExpenseForm = () => {
     const dispatch = useDispatch(); // Получаем функцию dispatch из хука useDispatch

@@ -1,4 +1,3 @@
-// reducers.js
 const initialState = {
     budget: 5000,
     expenses: [
